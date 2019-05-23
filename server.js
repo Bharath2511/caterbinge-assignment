@@ -38,5 +38,5 @@ if(process.env.NODE_ENV === 'production') {
 const port = 5001 || process.env.PORT
 
 app.listen(port, () => {
-    console.log('port started on 5000')
+    console.log(`port started on &{port}`)
 })
