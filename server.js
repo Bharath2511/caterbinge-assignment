@@ -1,3 +1,4 @@
+var cors = require('cors')
 const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
@@ -7,6 +8,9 @@ const path = require('path')
 const users = require('./routes/api/users')
 
 const app = express()
+
+app.use(cors())
+
 
 app.use(bodyParser.urlencoded({
     extended: false
